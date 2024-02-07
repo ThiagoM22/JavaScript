@@ -13,4 +13,12 @@ console.log("Divisao = ", divisao);
 console.log("Multiplicacao = ", multiplicacao);
 
 const _minhaconstante = 11;
+var v1= 10;
+var v2 = 3;
+console.log("------------------------------------------");
+console.log("Valores: v1 =", v1," | v2=", v2,);
+console.log("------------------------------------------");
+console.log("Resto da divisão inteira: v1 % v2=", v1 % v2);
+console.log("Exponeciação: v1**v2(v1 elevado a v2) =", v1 ** v2);
+
 

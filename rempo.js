@@ -1,7 +1,5 @@
-for (m = 0; m < 6; m++) {
-  if (m == 3) {
-    console.log("Ola Mundo");
-  } else {
-    console.log("Ola Bruno");
-  }
-}
+var uiui = new Date();
+var hora = uiui.getHours();
+var minut = uiui.getMinutes();
+var seg = uiui.getSeconds();
+console.log(hora, ":", minut, ":", seg);
