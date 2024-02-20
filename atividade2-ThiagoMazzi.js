@@ -6,7 +6,7 @@ console.log(nome, "tem", idade, "anos");
 var area = 12 * 6;
 console.log("2 Área do retângulo =", area);
 var volume = area * 5;
-console.log("3 Volume =", volume);
+console.log("3 Volume =", volume,"cm³");
 var a = 2;
 var b = 3;
 var c = -1;
