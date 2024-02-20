@@ -4,7 +4,7 @@ console.log("1",nome, "nasceu em", ano);
 var idade = 2024 - ano;
 console.log(nome, "tem", idade, "anos");
 var area = 12 * 6;
-console.log("2 Área do retângulo =", area);
+console.log("2 Área do retângulo =", area,"cm²");
 var volume = area * 5;
 console.log("3 Volume =", volume,"cm³");
 var a = 2;
