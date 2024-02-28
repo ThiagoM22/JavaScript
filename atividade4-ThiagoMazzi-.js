@@ -10,12 +10,11 @@ console.log("diagonal3:", matriz[2][2], matriz[1][1], matriz[0][0]);
 console.log("diagonal4:", matriz[2][0], matriz[1][1], matriz[0][2]);
 
 console.log("-----------------------------------------------------");
-var usuario = ["Douglas", 49, "Verde", "Uva", "Itapui", "Rogério "];
+var usuario = ["Douglas", 49, "Verde", "Uva", "Itapui", "Rogério"];
 console.log("Olá", usuario[0] + "! Seja bem vindo ao nosso sistema.");
 console.log(
-  "Você mora no",
-  usuario[4],
-  ", e tem um pet chamado",
+  "Você mora em",
+  usuario[4] + ", e tem um pet chamado",
   usuario[5] + "."
 );
 console.log(
@@ -25,3 +24,4 @@ console.log(
   usuario[3] + "."
 );
 console.log("Sua cor favorita é", usuario[2] + ".");
+console.log(`Bom dia ${usuario[0]}`);
