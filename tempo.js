@@ -3,6 +3,6 @@ var hora = uiui.getHours();
 var minut = uiui.getMinutes();
 var seg = uiui.getSeconds();
 console.log(hora, ":", minut, ":", seg);
-var novo = uiui.getFullYear
-console.log(novo)
+var novo = uiui.getFullYear()
+console.log(novo);
 
