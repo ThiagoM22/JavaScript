@@ -139,6 +139,7 @@ function jogar(jogador) {
     coluna = Math.floor(Math.random() * 3);
   } while (tabuleiro[linha][coluna] !== " ");
   tabuleiro[linha][coluna] = jogador;
+  console.table(tabuleiro);
   for (i = 0; i < tabuleiro.length; i++) {
     switch (true) {
       case tabuleiro[0][i] === tabuleiro[0][i] &&
@@ -194,7 +195,7 @@ function jogar(jogador) {
         break;
     }
   }
-  console.table(tabuleiro);
+ 
 }
 
 jogar(jogadorX);
