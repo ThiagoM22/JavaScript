@@ -57,4 +57,3 @@ console.log(`Terminei!`);
 //teste de validação == teste ? "bla bla" : ("ble ble")
 var preco = 500;
 
-var resultado = 
