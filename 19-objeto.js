@@ -54,7 +54,7 @@
 //     this.idade = idade;
 //     this.tipoAlimentacao = tipoAlimentacao;
 //   }
-//   Alimentar() {
+//   Alimentar1() {
 //     console.log(`Um animal ${this.nome} foi alimentado`);
 //   }
 //   emitirSom() {
@@ -62,7 +62,7 @@
 //   }
 // }
 // class Catioro extends Animal {
-//   alimentar() {
+//   alimentar1() {
 //     console.log(`O catioro ${this.nome} foi alimentado.`);
 //   }
 //   emitirSom() {
@@ -71,10 +71,10 @@
 // }
 // const meuCatioro = new Catioro(`Ship`, 4, "Ração");
 // const pet = new Catioro(`Benjamin`, 2, `Ração`);
-// pet.Alimentar();
+// pet.Alimentar1();
 // pet.emitirSom();
 // console.log(" ");
-// meuCatioro.alimentar();
+// meuCatioro.alimentar1();
 // meuCatioro.emitirSom();
 
 // console.log(
@@ -102,56 +102,86 @@
 // console.log(" ");
 // console.log(novoPetzinho.getNome());
 
+// console.log(
+//   "===================================Polimorfismo==================================="
+// );
+// //Polimorfismo - Pode tratar
+// class Animal1 {
+//   constructor(nome) {
+//     this.nome = nome;
+//   }
+
+//   fazerBarulho() {
+//     console.log("O animal faz um barulho genérico.");
+//   }
+// }
+
+// class Cachorro extends Animal1 {
+//   constructor(nome) {
+//     super(nome);
+//   }
+
+//   fazerBarulho() {
+//     console.log("O cachorro late!");
+//   }
+// }
+
+// class Gato extends Animal1 {
+//   constructor(nome) {
+//     super(nome);
+//   }
+
+//   fazerBarulho() {
+//     console.log("O gato mia!");
+//   }
+// }
+
+// // Exemplo de uso
+// const animais = [
+//   new Cachorro("Rex"),
+//   new Gato("Mia"),
+//   new Animal("Bob"), // Animal genérico
+// ];
+
+// for (const animal of animais) {
+//   animal.fazerBarulho();
+// }
 console.log(
-  "===================================Polimorfismo==================================="
+  "-------------------------------------Exemplos-------------------------------------"
 );
-//Polimorfismo - Pode tratar
-console.log("--------------------Polimorfismo--------------------");
-console.log("--------------------Polimorfismo--------------------");
-class Animal {
-  constructor(nome) {
-    this.nome = nome;
+//Criando uma classe retângulo
+class Retangulo {
+  constructor(comprimento, largura) {
+    this.comprimento = comprimento;
+    this.largura = largura;
   }
-
-
-  fazerBarulho() {
-    console.log("O animal faz um barulho genérico.");
+  obterarea() {
+    return this.comprimento * this.largura;
   }
-}
-
-
-class Cachorro extends Animal {
-  constructor(nome) {
-    super(nome);
+  obterperimetro() {
+    return this.comprimento * 2 + this.largura * 2;
   }
-
-
-  fazerBarulho() {
-    console.log("O cachorro late!");
+  setComp(novocomprimento) {
+    this.comprimento = novocomprimento;
+  }
+  setLag(novaLargura) {
+    this.largura = novaLargura;
   }
 }
+// Criando um objeto do "tipo" retângulo;
 
-
-class Gato extends Animal {
-  constructor(nome) {
-    super(nome);
-  }
-
-
-  fazerBarulho() {
-    console.log("O gato mia!");
-  }
+var ret = new Retangulo(10, 15);
+function displayRet(retangulo) {
+  console.table(retangulo);
+  console.log(`Comprimento = ${retangulo.comprimento};`);
+  console.log(`Largura = ${retangulo.largura};`);
+  console.log(`Área = ${retangulo.obterarea()};`);
+  console.log(`Perimetro = ${retangulo.obterperimetro()};`);
 }
-
-
-// Exemplo de uso
-const animais = [
-  new Cachorro("Rex"),
-  new Gato("Mia"),
-  new Animal("Bob"), // Animal genérico
-];
-
-
-for (const animal of animais) {
-  animal.fazerBarulho();
-}
+displayRet(ret);
+ret.setComp(5);
+ret.setLag(10);
+console.log(
+  `----------------------------------------------------------------------------------`
+);
+displayRet(ret);
